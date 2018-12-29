@@ -1,0 +1,44 @@
+﻿@import url('https://fonts.googleapis.com/css?family=Montserrat:400,800');
+:root {
+  --fps-color: 'white';
+}
+html, body {
+  margin: 0;
+  width: 10%;
+  height: 10%;
+  overflow: hidden;
+}
+canvas {
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 1;
+}
+h3 {
+  padding-bottom: 1.4rem;
+  border-bottom: 1px solid black;
+  font-size: 2rem;
+}
+img{
+  width: calc((3*90vw)/5);
+  left: 50%;
+  transform: translateX(-50%);
+  height: 100%;
+  overflow: hidden;
+  z-index: 2;
+  position: relative;
+  border-left: 2px solid var(--fps-color);
+  border-right: 2px solid var(--fps-color);
+  padding: 0 2rem;
+}
+#text {
+  height: 100%;
+  width: 100%;
+  overflow-x: hidden;
+  overflow-y: scroll;
+  color: black;
+  font-family: 'Monserrat', sans-serif;
+  font-size: 0.9rem;
+  line-height: 1.2rem;
+  padding-right: 2.75rem;
+}
