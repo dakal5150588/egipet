@@ -37,6 +37,11 @@ footer {
   height: 100%;
   border: 1px solid; }
 
+  .carousel-inner{
+    align-items: center;
+    width: 100%;
+  }
+
 /*
 .page-header {
   text-align: center;

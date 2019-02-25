@@ -1,0 +1,443 @@
+<!DOCTYPE html>
+ <html lang="ru">
+
+<head>
+        <title>Slicebox - 3D Image Slider</title>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"> 
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+        <meta name="description" content="Slicebox - 3D Image Slider with Fallback" />
+        <meta name="keywords" content="jquery, css3, 3d, webkit, fallback, slider, css3, 3d transforms, slices, rotate, box, automatic" />
+    <meta name="author" content="Pedro Botelho for Codrops" />
+    <link rel="shortcut icon" href="../favicon.ico"> 
+        <link rel="stylesheet" href="..styles/fmstandart.css">
+        <link rel="stylesheet" type="text/css" href="css/demo.css" />
+    <link rel="stylesheet" type="text/css" href="css/slicebox.css" />
+    <link rel="stylesheet" type="text/css" href="css/custom.css" />
+    <script type="text/javascript" src="js/modernizr.custom.46884.js"></script>
+  </head>
+
+
+<body>
+<div class="container">
+  <div class="wrapper">
+
+    <ul id="sb-slider" class="sb-slider">
+      <li>
+        <a href="https://picua.org/image/nTifQn" target="_blank"><img src="https://picua.org/images/2019/01/01/9e7b2474e718bdac1a918820dd435491.md.jpg" alt="image1"/></a>
+        <div class="sb-description">
+          <h3>Новый Год</h3>
+        </div>
+      </li>
+      <li>
+        <a href="https://picua.org/image/ntO61z" target="_blank"><img src="https://picua.org/images/2018/12/27/1990afd09281f4f3c862c6118a58c4b8.md.jpg" alt="image2"/></a>
+        <div class="sb-description">
+          <h3>Посевание на Рождество</h3>
+        </div>
+      </li>
+      <li>
+        <a href="https://picua.org/image/nohbQr" target="_blank"><img src="https://picua.org/images/2018/12/26/b79427d3137bd761b5e2d4e858558870.md.jpg" alt="image1"/></a>
+        <div class="sb-description">
+          <h3>Ресторан 2019</h3>
+        </div>
+      </li>
+      <li>
+        <a href="https://picua.org/image/nohKvo" target="_blank"><img src="https://picua.org/images/2018/12/26/4a547afb5fe255494de3d81098bd4e35.jpg" alt="image1"/></a>
+        <div class="sb-description">
+          <h3>Affectionate Decision Maker</h3>
+        </div>
+      </li>
+      <li>
+        <a href="https://picua.org/image/nohAw0" target="_blank"><img src="https://picua.org/images/2018/12/26/2fcb9e6921b2bbff0cb1ec4a53862025.jpg" alt="image1"/></a>
+        <div class="sb-description">
+          <h3> Тестирование блютуз гарнитуры</h3>
+        </div>
+      </li>
+      <li>
+        <a href="https://picua.org/image/nohQP6" target="_blank"><img src="https://picua.org/images/2018/12/26/525aa5bf1a73f913fb0b89f5ecee5ba5.jpg" alt="image1"/></a>
+        <div class="sb-description">
+          <h3>Фесилити Менеджмент Украина</h3>
+        </div>
+      </li>
+      <li>
+        <a href="https://picua.org/image/nohCqN" target="_blank"><img src="https://picua.org/images/2018/12/26/e5e2ab395bb85760a887f9fd824a74bd.jpg" alt="image1"/></a>
+        <div class="sb-description">
+          <h3>Новый 2019 год</h3>
+        </div>
+      </li>
+      <li>
+        <a href="https://picua.org/image/noh1ym" target="_blank"><img src="https://picua.org/images/2018/12/26/3132f8a17b865f6d40f92969ae59a4e3.jpg" alt="image1"/></a>
+        <div class="sb-description">
+          <h3>Празднование в разгаре</h3>
+        </div>
+      </li>
+      <li>
+        <a href="https://picua.org/image/nohlL7" target="_blank"><img src="https://picua.org/images/2018/12/26/53b432ab26ce22f6271fc0e2c2258866.jpg" alt="image1"/></a>
+        <div class="sb-description">
+          <h3>Веселый Новый Год</h3>
+        </div>
+      </li>
+      <li>
+        <a href="https://picua.org/image/nohB9y" target="_blank"><img src="https://picua.org/images/2018/12/26/0629616b33d91921ac503df01694ceb3.jpg" alt="image1"/></a>
+        <div class="sb-description">
+          <h3>Начало Года</h3>
+        </div>
+      </li>
+      <li>
+        <a href="https://picua.org/image/noh9hF" target="_blank"><img src="https://picua.org/images/2018/12/26/2eb7153fbc8f157697fb2adf3f15d527.jpg" alt="image1"/></a>
+        <div class="sb-description">
+          <h3>Колективное фото</h3>
+        </div>
+      </li>
+      <li>
+        <a href="https://picua.org/image/nohz4L" target="_blank"><img src="https://picua.org/images/2018/12/26/b12890a00bcb24a046f2ddefc2b04690.jpg" alt="image1"/></a>
+        <div class="sb-description">
+          <h3>Начало Сезона</h3>
+        </div>
+      </li>
+      <li>
+        <a href="https://picua.org/image/nohFQc" target="_blank"><img src="https://picua.org/images/2018/12/26/4b27e915191432d73e203369405d0fa4.jpg" alt="image1"/></a>
+        <div class="sb-description">
+          <h3>выступление на сцене</h3>
+        </div>
+      </li>
+      <li>
+        <a href="https://picua.org/image/nohDfB" target="_blank"><img src="https://picua.org/images/2018/12/26/0e1bd762cf92cd0eb6720d0f880e0d94.jpg" alt="image1"/></a>
+        <div class="sb-description">
+          <h3>выступление на сцене</h3>
+        </div>
+      </li>
+      <li>
+        <a href="https://picua.org/image/noh3wJ" target="_blank"><img src="https://picua.org/images/2018/12/26/4b27e915191432d73e203369405d0fa4.jpg" alt="image1"/></a>
+        <div class="sb-description">
+          <h3>тоже </h3>
+        </div>
+      </li>
+      <li>
+        <a href="https://picua.org/image/noh3wJ" target="_blank"><img src="https://picua.org/images/2018/12/26/5fb06c95f6a8e4f5b1daed47bcc8dcf3.jpg" alt="image1"/></a>
+        <div class="sb-description">
+          <h3>селфи</h3>
+        </div>
+      </li>
+      <li>
+        <a href="https://picua.org/image/nGe7f0" target="_blank"><img src="https://picua.org/images/2018/12/26/8c5b7880399b91fe284e686770e7e65b.jpg" alt="image1"/></a>
+        <div class="sb-description">
+          <h3>подготовка к празднованию</h3>
+        </div>
+      </li>
+      <li>
+        <a href="https://picua.org/image/nGZut6" target="_blank"><img src="https://picua.org/images/2018/12/26/856d8443eb2655ae2ea12d4c5aa005a2.jpg" alt="image1"/></a>
+        <div class="sb-description">
+          <h3>подготовка к празднованию</h3>
+        </div>
+      </li>
+      <li>
+        <a href="https://picua.org/image/nGZPPN" target="_blank"><img src="https://picua.org/images/2018/12/26/94197c79ff97deab4b0d7e67433306f1.jpg" alt="image1"/></a>
+        <div class="sb-description">
+          <h3>подготовка к празднованию</h3>
+        </div>
+      </li>
+      <li>
+        <a href="https://picua.org/image/nGZ6mm" target="_blank"><img src="https://picua.org/images/2018/12/26/f97d30bac0cd9f5905457002895e83bf.jpg" alt="image1"/></a>
+        <div class="sb-description">
+          <h3>подготовка к празднованию</h3>
+        </div>
+      </li>
+      <li>
+        <a href="https://picua.org/image/nGZby7" target="_blank"><img src="https://picua.org/images/2018/12/26/dc9077f9d0015dda1f25a0d98482535f.jpg" alt="image1"/></a>
+        <div class="sb-description">
+          <h3>подготовка к празднованию</h3>
+        </div>
+      </li>
+      <li>
+        <a href="https://picua.org/image/nGZKxy" target="_blank"><img src="https://picua.org/images/2018/12/26/47a6e8af16e98985dc695550f7377957.jpg" alt="image1"/></a>
+        <div class="sb-description">
+          <h3>подготовка к празднованию</h3>
+        </div>
+      </li>
+      <li>
+        <a href="https://picua.org/image/nGZrzF" target="_blank"><img src="https://picua.org/images/2018/12/26/966f52d68840f7a85774ab5363aef555.jpg" alt="image1"/></a>
+        <div class="sb-description">
+          <h3>офис</h3>
+        </div>
+      </li>
+      <li>
+        <a href="https://picua.org/image/nGZQhL" target="_blank"><img src="https://picua.org/images/2018/12/26/d021f0649854d99960a1e35113ce798a.jpg" alt="image1"/></a>
+        <div class="sb-description">
+          <h3>офис</h3>
+        </div>
+      </li>
+      <li>
+        <a href="https://picua.org/image/nGZCWc" target="_blank"><img src="https://picua.org/images/2018/12/26/e4b8a2eec408e1d66f6fadb88d34cdb4.jpg" alt="image1"/></a>
+        <div class="sb-description">
+          <h3>ресторан перед открытием</h3>
+        </div>
+      </li>
+      <li>
+        <a href="https://picua.org/image/nGZlCB" target="_blank"><img src="https://picua.org/images/2018/12/26/293378d7e128e9d946bea74c54313a18.jpg" alt="image1"/></a>
+        <div class="sb-description">
+          <h3>перед Новым Годом</h3>
+        </div>
+      </li>
+      <li>
+        <a href="https://picua.org/image/nGZRfJ" target="_blank"><img src="https://picua.org/images/2018/12/26/f90664ae65c4ec17199a2e1cd96fd84b.jpg" alt="image1"/></a>
+        <div class="sb-description">
+          <h3>перед Новым Годом1</h3>
+        </div>
+      </li>
+      <li>
+        <a href="https://picua.org/image/nGZBtE" target="_blank"><img src="https://picua.org/images/2018/12/26/d0dafe77d7ea2faad85e0213deeeed44.jpg" alt="image1"/></a>
+        <div class="sb-description">
+          <h3>перед Новым Годом2</h3>
+        </div>
+      </li>
+      <li>
+        <a href="https://picua.org/image/nGZz6C" target="_blank"><img src="https://picua.org/images/2018/12/26/2813de0f4ce72fda8214775b592d019e.jpg" alt="image1"/></a>
+        <div class="sb-description">
+          <h3>все во внимании </h3>
+        </div>
+      </li>
+      <li>
+        <a href="https://picua.org/image/nGZImY" target="_blank"><img src="https://picua.org/images/2018/12/26/a0211e7a08162dc737ed5f5265f937c7.jpg" alt="image1"/></a>
+        <div class="sb-description">
+          <h3>перед </h3>
+        </div>
+      </li>
+      <li>
+        <a href="https://picua.org/image/nGZFpf" target="_blank"><img src="https://picua.org/images/2018/12/26/4b4e430b8f00b17f52ab1768da6e7af5.jpg" alt="image1"/></a>
+        <div class="sb-description">
+          <h3>настроение</h3>
+        </div>
+      </li>
+      <li>
+        <a href="https://picua.org/image/nGZDnK" target="_blank"><img src="https://picua.org/images/2018/12/26/1f1eafa4a4cb47923fbc2d1fa154126f.jpg" alt="image1"/></a>
+        <div class="sb-description">
+          <h3>перед Новым Годом2</h3>
+        </div>
+      </li>
+      <li>
+        <a href="https://picua.org/image/nGZqzw" target="_blank"><img src="https://picua.org/images/2018/12/26/f90830d78501ec139b819d6a1176165a.jpg" alt="image1"/></a>
+        <div class="sb-description">
+          <h3> Годом2</h3>
+        </div>
+      </li>
+      <li>
+        <a href="https://picua.org/image/nGZmdX" target="_blank"><img src="https://picua.org/images/2018/12/26/6f2a279498da0d77eae35e2c8d9b431e.jpg" alt="image1"/></a>
+        <div class="sb-description">
+          <h3>п2</h3>
+        </div>
+      </li>
+      <li>
+        <a href="https://picua.org/image/nGZjJg" target="_blank"><img src="https://picua.org/images/2018/12/26/ae2e6899a4dba2df44bb9ecd3cdb6add.jpg" alt="image1"/></a>
+        <div class="sb-description">
+          <h3> Год  2019</h3>
+        </div>
+      </li>
+      <li>
+        <a href="https://picua.org/image/nGZ0e3" target="_blank"><img src="https://picua.org/images/2018/12/26/46057d48bbcd4d3657840c214668c52a.jpg" alt="image1"/></a>
+        <div class="sb-description">
+          <h3>п3</h3>
+        </div>
+      </li>
+      <li>
+        <a href="https://picua.org/image/nGZvtn" target="_blank"><img src="https://picua.org/images/2018/12/26/c1ecb9a7376da3c63e2d9d10368aca97.jpg" alt="image1"/></a>
+        <div class="sb-description">
+          <h3>п4</h3>
+        </div>
+      </li>
+     <li>
+        <a href="https://picua.org/image/nGZe6M" target="_blank"><img src="https://picua.org/images/2018/12/26/2cde5b1d4722e5666284f24551fbb0f9.jpg" alt="image1"/></a>
+        <div class="sb-description">
+          <h3>п5</h3>
+        </div>
+      </li>
+      <li>
+        <a href="https://picua.org/image/nGZmdX" target="_blank"><img src="https://picua.org/images/2018/12/26/6f2a279498da0d77eae35e2c8d9b431e.jpg" alt="image1"/></a>
+        <div class="sb-description">
+          <h3>п2</h3>
+        </div>
+      </li>
+      <li>
+        <a href="https://picua.org/image/nGZZjz" target="_blank"><img src="https://picua.org/images/2018/12/26/30d35bd12602fc0df26bedd0ad7180ff.jpg" alt="image1"/></a>
+        <div class="sb-description">
+          <h3>п6</h3>
+        </div>
+      </li>
+      <li>
+        <a href="https://picua.org/image/nGZHpi" target="_blank"><img src="https://picua.org/images/2018/12/26/d87963d03c182bffc195c97bf8e55484.jpg" alt="image1"/></a>
+        <div class="sb-description">
+          <h3>п7</h3>
+        </div>
+      </li>
+      <li>
+        <a href="https://picua.org/image/nGZHpi" target="_blank"><img src="https://picua.org/images/2018/12/26/7a7ce39c95f2e5ddc63e6ed9ee9525e0.jpg" alt="image1"/></a>
+        <div class="sb-description">
+          <h3>п8</h3>
+        </div>
+      </li>
+      <li>
+        <a href="https://picua.org/image/nGZhIl" target="_blank"><img src="https://picua.org/images/2018/12/26/c15dc0b6e58e8cdc48d0467bc64a735d.jpg" alt="image1"/></a>
+        <div class="sb-description">
+          <h3>п9</h3>
+        </div>
+      </li>
+      <li>
+        <a href="https://picua.org/image/nGZhIl" target="_blank"><img src="https://picua.org/images/2018/12/26/39c83de0df7a9f0b1e4841c39bf8c042.jpg" alt="image1"/></a>
+        <div class="sb-description">
+          <h3>танцы</h3>
+        </div>
+      </li>
+      
+      <li>
+        <a href="https://picua.org/image/nGZcJZ" target="_blank"><img src="https://picua.org/images/2018/12/26/15e9e4c1fadbd5b6d18c76b30eae39d6.jpg" alt="image1"/></a>
+        <div class="sb-description">
+          <h3>п</h3>
+        </div>
+      </li>
+      <li>
+        <a href="https://picua.org/image/nGZM1r" target="_blank"><img src="https://picua.org/images/2018/12/26/197e3df701fc657d0a02a9f819a39a51.jpg" alt="image1"/></a>
+        <div class="sb-description">
+          <h3>п2ппп</h3>
+        </div>
+      </li>
+      <li>
+        <a href="https://picua.org/image/nGZ5eo" target="_blank"><img src="https://picua.org/images/2018/12/26/7bb06d8bb4ddd9645049ea53a94916aa.jpg" alt="image1"/></a>
+        <div class="sb-description">
+          <h3>п21111</h3>
+        </div>
+      </li>
+      <li>
+        <a href="https://picua.org/image/nGZyo0" target="_blank"><img src="https://picua.org/images/2018/12/26/cf069019eb579a782025d3118b929588.jpg" alt="image1"/></a>
+        <div class="sb-description">
+          <h3>пйййй2</h3>
+        </div>
+      </li>
+      <li>
+        <a href="https://picua.org/image/nGZkb6" target="_blank"><img src="https://picua.org/images/2018/12/26/45d0f728e9294d162ade4ac80c432ce5.jpg" alt="image1"/></a>
+        <div class="sb-description">
+          <h3>п2222</h3>
+        </div>
+      </li>
+      <li>
+        <a href="https://picua.org/image/nGZTjN" target="_blank"><img src="https://picua.org/images/2018/12/26/45815cedb037303f3930d9e461e82d9c.jpg" alt="image1"/></a>
+        <div class="sb-description">
+          <h3>прррр2</h3>
+        </div>
+      </li>
+      <li>
+        <a href="https://picua.org/image/nGZNkm" target="_blank"><img src="https://picua.org/images/2018/12/26/e6998afb51c1d27ec8b885a071ea123a.jpg" alt="image1"/></a>
+        <div class="sb-description">
+          <h3>п88882</h3>
+        </div>
+      </li>
+      <li>
+        <a href="https://picua.org/image/nGZ2n7" target="_blank"><img src="https://picua.org/images/2018/12/26/7ab2fe47d99ea31b6c6ca7088819402b.jpg" alt="image1"/></a>
+        <div class="sb-description">
+          <h3>пооооо2</h3>
+        </div>
+      </li>
+      <li>
+        <a href="https://picua.org/image/nGZtIy" target="_blank"><img src="https://picua.org/images/2018/12/26/9dfd29ccfd2ec1a2dadb241ed5471f17.jpg" alt="image1"/></a>
+        <div class="sb-description">
+          <h3>п2ррр</h3>
+        </div>
+      </li>
+      <li>
+        <a href="https://picua.org/image/nGZocF" target="_blank"><img src="https://picua.org/images/2018/12/26/f227386530bebc69f3a9d936a0cd120c.jpg" alt="image1"/></a>
+        <div class="sb-description">
+          <h3>пфф2</h3>
+        </div>
+      </li>
+      <li>
+        <a href="https://picua.org/image/nGZWoJ" target="_blank"><img src="https://picua.org/images/2018/12/26/4a547afb5fe255494de3d81098bd4e35.jpg" alt="image1"/></a>
+        <div class="sb-description">
+          <h3>п2</h3>
+        </div>
+      </li>
+      
+      
+</ul>
+   <!--
+    <div id="shadow" class="shadow"></div>
+    
+    <div id="nav-arrows" class="nav-arrows">
+      <a href="#">Next</a>
+      <a href="#">Previous</a>
+    </div>
+    
+  </div>
+</div>
+<script type="text/javascript" src="//ajax.googleapis.com/ajax/libs/jquery/1.8.2/jquery.min.js"></script>
+
+  <script type="text/javascript" src="..scripts/my js/fmstandart.js"></script>
+</body>
+</html>-->
+<div id="shadow" class="shadow"></div>
+
+        <div id="nav-arrows" class="nav-arrows">
+          <a href="#">Next</a>
+          <a href="#">Previous</a>
+        </div>
+
+        <div id="nav-options" class="nav-options">
+          <span id="navPlay">Play</span>
+          <span id="navPause">Pause</span>
+        </div>
+
+      </div><!-- /wrapper -->
+
+      <p class="info"><strong>Example 2:</strong> Slideshow with play &amp; pause and horizontal slices</p>
+
+    </div>
+    <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.2/jquery.min.js"></script>
+    <script type="text/javascript" src="js/jquery.slicebox.js"></script>
+    <script type="text/javascript">
+      $(function() {
+        
+        var Page = (function() {
+          var $navArrows = $( '#nav-arrows' ).hide(),
+            $navOptions = $( '#nav-options' ).hide(),
+            $shadow = $( '#shadow' ).hide(),
+            slicebox = $( '#sb-slider' ).slicebox( {
+              onReady : function() {
+                $navArrows.show();
+                $navOptions.show();
+                $shadow.show();
+              },
+              orientation : 'h',
+              cuboidsCount : 3
+            } ),
+            
+            init = function() {
+              initEvents();
+              
+            },
+            initEvents = function() {
+              // add navigation events
+              $navArrows.children( ':first' ).on( 'click', function() {
+                slicebox.next();
+                return false;
+              } );
+              $navArrows.children( ':last' ).on( 'click', function() {
+                
+                slicebox.previous();
+                return false;
+              } );
+              $( '#navPlay' ).on( 'click', function() {
+                
+                slicebox.play();
+                return false;
+              } );
+              $( '#navPause' ).on( 'click', function() {
+                
+                slicebox.pause();
+                return false;
+              } );
+            };
+            return { init : init };
+        })();
+        Page.init();
+      });
+    </script>
+  </body>
+</html> 
